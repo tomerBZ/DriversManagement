@@ -9,19 +9,19 @@ Drivers Management Application for Gett Fronted test
 This project was created with the following technologies:
 
 Application - Angular 5 CLI
-![Angular](https://angular.io/assets/images/logos/angular/angular.png)
+![Angular](https://angular.io/assets/images/logos/angular/angular.png | width=100)
 
 Design - Angular Material
-![Angular](https://angular.io/assets/images/logos/angular/angular.png)
+![Angular](https://angular.io/assets/images/logos/angular/angular.png | width=100)
 
 Database - Cloud Firestore
-![Firestore](https://cdn.worldvectorlogo.com/logos/firebase-1.svg)
+![Firestore](https://cdn.worldvectorlogo.com/logos/firebase-1.svg | width=100)
 
 Grid System - Bootstrap
-![Sass](https://getbootstrap.com/assets/img/bootstrap-stack.png)
+![Sass](https://getbootstrap.com/assets/img/bootstrap-stack.png | width=100)
 
 Styles - SCSS
-![Sass](http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
+![Sass](http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png | width=100)
 
 ## Installation
 
