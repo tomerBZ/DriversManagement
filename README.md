@@ -10,26 +10,26 @@ This project was created with the following technologies:
 
 Application - Angular 5 CLI
 
-<img src="https://angular.io/assets/images/logos/angular/angular.png" width="100" height="100">
+<img src="https://angular.io/assets/images/logos/angular/angular.png" width="50" height="50">
 
 Design - Angular Material
 
-<img src="https://angular.io/assets/images/logos/angular/angular.png" width="100" height="100">
+<img src="https://angular.io/assets/images/logos/angular/angular.png" width="50" height="50">
 
 
 Database - Cloud Firestore
 
-<img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" width="100" height="100">
+<img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" width="50" height="50">
 
 
 Grid System - Bootstrap
 
-<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="100" height="100">
+<img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="50" height="50">
 
 
 Styles - SCSS
 
-<img src="http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png?s=100" width="100" height="100">
+<img src="http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png" width="50" height="50">
 
 ## Installation
 
