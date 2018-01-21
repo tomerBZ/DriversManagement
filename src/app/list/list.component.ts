@@ -9,7 +9,7 @@ import { AddDriverDialogComponent } from '../shared/components/add-driver-dialog
 })
 export class ListComponent implements OnInit {
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
