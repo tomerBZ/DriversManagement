@@ -1,0 +1,13 @@
+mat-card {
+  p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 10px;
+    i {
+      padding-right: 10px;
+      color: #fbb42e;
+    }
+  }
+}

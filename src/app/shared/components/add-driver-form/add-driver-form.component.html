@@ -1,0 +1,45 @@
+<form [formGroup]="addDriverForm" (submit)="formSubmit(addDriverForm)">
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <div class="form-group">
+        <mat-form-field>
+          <mat-placeholder>Driver Name</mat-placeholder>
+          <input name="name" formControlName="name" matInput required>
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-error>{{ formErrors.name }}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field>
+          <mat-placeholder>Driver Email</mat-placeholder>
+          <input formControlName="email" matInput required>
+          <mat-icon matPrefix>email</mat-icon>
+          <mat-error>{{ formErrors.email }}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field>
+          <mat-placeholder>Driver Phone</mat-placeholder>
+          <input formControlName="phone" matInput required>
+          <mat-icon matPrefix>phone</mat-icon>
+          <mat-error>{{ formErrors.phone }}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field>
+          <mat-placeholder>Driver Address</mat-placeholder>
+          <input name="address" autocomplete="off" formControlName="address" matInput required #search>
+          <mat-icon matPrefix>add_location</mat-icon>
+          <mat-error>{{ formErrors.address }}</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="col-md-6 col-12">
+      <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+  <button color="accent" mat-button>Ok</button>
+  <button color="primary" mat-button (click)="closeMe()">Cancel</button>
+</form>

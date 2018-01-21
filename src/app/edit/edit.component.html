@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <header class="col-12 mb-3">
+      <h1>Driver's Card <small class="text-muted">Edit</small></h1>
+      <p>You need to change driver's details in order to be able to update</p>
+    </header>
+    <mat-card class="col-lg-6">
+      <form [formGroup]="editForm" (submit)="formSubmit(editForm)">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <img class="img-fluid" src="https://www.communitylandtrust.ca/wp-content/uploads/2015/10/placeholder.png">
+          </div>
+          <div class="form-group">
+            <mat-form-field>
+              <mat-placeholder>Driver Name</mat-placeholder>
+              <input name="name" formControlName="name" matInput required>
+              <mat-icon matPrefix>person</mat-icon>
+              <mat-error>{{ formErrors.name }}</mat-error>
+            </mat-form-field>
+          </div>
+        </mat-card-header>
+        <img mat-card-image
+             src="https://cnet3.cbsistatic.com/img/edcAJzHWfdqz9dENxR4hJrzit-k=/770x433/2015/04/28/58d1ed9c-8a59-47ce-9158-8f6ae5eda8f7/gett-black-taxi-cab-london.jpg">
+        <mat-card-content>
+          <div class="form-group">
+            <mat-form-field>
+              <mat-placeholder>Driver Address</mat-placeholder>
+              <input name="address" autocomplete="off"  formControlName="address" #search matInput required>
+              <mat-icon matPrefix>add_location</mat-icon>
+              <mat-error>{{ formErrors.address }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field>
+              <mat-placeholder>Driver Phone</mat-placeholder>
+              <input name="phone" formControlName="phone" matInput required>
+              <mat-icon matPrefix>phone</mat-icon>
+              <mat-error>{{ formErrors.phone }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field>
+              <mat-placeholder>Driver Email</mat-placeholder>
+              <input name="email" formControlName="email" matInput required>
+              <mat-icon matPrefix>email</mat-icon>
+              <mat-error>{{ formErrors.email }}</mat-error>
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="accent" [routerLink]="['/Driver', driver?.email]">Cancel</button>
+          <button mat-button color="accent">Update</button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </div>
+</div>

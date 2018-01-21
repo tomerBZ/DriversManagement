@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <h1 class="col-12 mb-5">Driver's Card</h1>
+    <mat-card class="col-lg-6">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <img class="img-fluid" src="https://www.communitylandtrust.ca/wp-content/uploads/2015/10/placeholder.png">
+        </div>
+        <mat-card-title>{{ driver?.name }}</mat-card-title>
+        <mat-card-subtitle>Driver</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://cnet3.cbsistatic.com/img/edcAJzHWfdqz9dENxR4hJrzit-k=/770x433/2015/04/28/58d1ed9c-8a59-47ce-9158-8f6ae5eda8f7/gett-black-taxi-cab-london.jpg">
+      <mat-card-content>
+        <p><i class="material-icons">location_on</i> {{ driver?.address }}</p>
+        <p><i class="material-icons">phone</i> {{ driver?.phone  }}</p>
+        <p><i class="material-icons">email</i> {{ driver?.email }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="accent" [routerLink]="['/']">Back</button>
+        <button mat-button color="accent" [routerLink]="['/Edit', driver?.email]">Edit</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

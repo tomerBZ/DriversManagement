@@ -1,0 +1,23 @@
+<button mat-icon-button (click)="toggleSideBar(sidenav)" id="menu-toggle">
+  <mat-icon>menu</mat-icon>
+</button>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push" opened="{{sideNavView}}" class="col-sm-3 col-md-2 d-lg-block bg-light sidebar">
+    <!--summery-nav-->
+    <ul id="summery-nav" class="nav flex-column nav-sections">
+      <li class="nav-item">
+        <h2 class="nav-link nav-header">Common Actions</h2>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" (click)="checkIfMobile(sidenav)"><i class="material-icons pr-2">home</i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Drivers']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" (click)="checkIfMobile(sidenav)"><i class="material-icons pr-2">directions_car</i> Drivers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Add']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" (click)="checkIfMobile(sidenav)"><i class="material-icons pr-2">add</i> Add Driver</a>
+      </li>
+    </ul>
+  </mat-sidenav>
+</mat-sidenav-container>
+
