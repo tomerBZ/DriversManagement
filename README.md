@@ -27,7 +27,7 @@ Grid System - Bootstrap
 <img src="https://getbootstrap.com/assets/img/bootstrap-stack.png" width="50" height="50">
 
 
-Styles - SCSS
+Styles - SCSS 
 
 <img src="http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png" width="50" height="50">
 
